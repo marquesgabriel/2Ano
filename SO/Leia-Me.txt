@@ -1,1 +1,0 @@
-Programas em C apresentando a implementação de uma lista encadeada em C
