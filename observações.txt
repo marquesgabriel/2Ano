@@ -1,1 +1,1 @@
-Os projetos Java foram feitos na IDE Eclipse, com a exce��o ods projetos JavaFX.
+Os projetos Java foram feitos na IDE Eclipse, com a exceção ods projetos JavaFX. Mas aqui só estão os codigos fonte.
