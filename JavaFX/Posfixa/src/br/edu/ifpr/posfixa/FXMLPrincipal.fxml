@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="204.0" prefWidth="426.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifpr.posfixa.FXMLPrincipalController">
+  <!-- LIMITAR OS RADIO BUTTONS PARA UM UNICO GRUPO -->  
+  <fx:define>
+    <ToggleGroup fx:id="romualdo" />
+  </fx:define>
+  <!-- FIM COMENTARIO -->  
+  <children>
+    <TextField fx:id="txfOperacao" layoutX="156.0" layoutY="83.0" onKeyReleased="#expressaoOnKeyReleased" prefWidth="200.0" promptText="" />
+    <Label fx:id="lbOperacao" disable="true" labelFor="$txfOperacao" layoutX="14.0" layoutY="86.0" mnemonicParsing="true" text="Digite a _operação posfixa:" wrapText="false" />
+    <Button fx:id="btnCalcula" defaultButton="false" disable="true" layoutX="19.0" layoutY="111.0" mnemonicParsing="true" onAction="#pressionaBotaoCalcula" prefWidth="77.0" text="_Calcule!" />
+    <TextField fx:id="txfResultado" disable="true" layoutX="104.0" layoutY="110.0" prefWidth="252.0" promptText="O resultado é" />
+    <ToggleButton id="togAdventure" fx:id="tbtnAdventure" disable="false" layoutX="19.0" layoutY="169.0" mnemonicParsing="true" text="_Aventura!" />
+    <Text layoutX="356.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naturallis™" />
+    <RadioButton fx:id="rbtnHabilitar" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#radioButtonSelect" text="Habilitar" toggleGroup="$romualdo" />
+    <RadioButton fx:id="rbtnDesabilitar" layoutX="19.0" layoutY="37.0" mnemonicParsing="false" onAction="#radioButtonSelect" selected="true" text="Desabilitar" toggleGroup="$romualdo" />
+  </children>
+</AnchorPane>

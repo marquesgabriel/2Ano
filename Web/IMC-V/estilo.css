@@ -1,0 +1,24 @@
+#titulo{
+	font-family: "lucida console", "monospace";
+	background-color:#AF7171;
+	color: #F7F7F7;
+	text-align: center;
+}
+#formulario1{
+	font-family: "courier new", "monospace";
+	background-color: #F1F1F1;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+
+	background-image: url("images/background.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#corpo{
+	background-color: #F1F1F1;
+}
+#svg{
+	display: block;
+    margin: 0 auto;
+}

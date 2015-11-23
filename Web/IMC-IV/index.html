@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>Calculadora de IMC 4.0</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body id="corpo" onload="clear()">
+	<header id="cabecalho">
+		<h2 id="titulo" >Coloque seus dados!</h1>
+	</header>
+	<nav id="contato">
+		Calculadora
+		<ul>
+			<li>
+				<a href="index.html">Calcular!</a>
+			</li>
+		</ul>
+		Sobre
+		<ul>
+			<li>
+				<a href="imc.html">IMC</a><br>
+			</li>
+			<li>
+				<a href="atividade.html">Atividade</a><br>
+			</li>
+		</ul>
+		Contato!
+		<ul>
+			<li>
+				<a href="https://www.facebook.com/naturallis">Facebook</a><br>
+			</li>
+			<li>
+				<a href="http://www.twitter.com/gfpms">Twitter</a><br>
+			</li>
+			<li>
+				<a href="mailto:gabryelfelip@gmail.com? Subject=Olá%20Gabriel" target="_top">E-mail</a>
+			</li>
+		</ul>
+	</nav>
+	<div id="conteudo">
+		<div id="calculadora">
+			<form id="formulario1">
+				<label for="peso">Seu Peso(kg):</label><br>
+				<input id="peso" name="peso" type="number"><br>
+				<label for="altura">Sua Altura(m):</label><br>
+				<input id="altura" name="altura" type="number" step="any"><br>
+				<input id="btResult" type="button" value="Calcular!" onclick="calcular()">
+				<br>
+			</form>
+			<canvas id="tabela" width="48" height="48"></canvas>
+			<br>
+			<span id="imcResult"></span>
+			<br>
+			<span id="resultado"></span>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Gabriel Felipe Marques <br> IFPR - Campus Londrina <br> 2014</p>
+	</div>
+	<script type="text/javascript" src="calculo.js"></script>
+</body>
+</html>
