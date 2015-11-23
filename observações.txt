@@ -1,0 +1,1 @@
+Os projetos Java foram feitos na IDE Eclipse, com a exceção ods projetos JavaFX.
